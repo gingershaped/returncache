@@ -1,7 +1,8 @@
-from asyncio import iscoroutinefunction
-from functools import partial, wraps
+# SPDX-License-Identifier: MPL-2.0
+
 import inspect
 from datetime import datetime
+from functools import partial, wraps
 from typing import Any, Awaitable, Callable, Coroutine, overload
 
 type SynchronousCacheable[**P, R] = Callable[P, tuple[datetime, R]]

@@ -1,7 +1,22 @@
 [project]
 name = "returncache"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "A decorator for wrapping any function in an expiring cache. Supports coroutines!"
+authors = [{ name = "Ginger" }]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MPL-2.0"
+license-files = ["LICENSE"]
+
+[project.urls]
+Source = "https://github.com/gingershaped/returncache"
+Issues = "https://github.com/gingershaped/returncache/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
